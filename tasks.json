@@ -1,0 +1,395 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Design new landing page",
+      "description": "Create wireframes and mockups for the new product landing page with responsive design considerations",
+      "assignedTo": "Sarah Johnson",
+      "assignedToId": 1,
+      "priority": "high",
+      "status": "in-progress",
+      "dueDate": "2026-01-15",
+      "createdDate": "2025-12-20",
+      "completedDate": null,
+      "progress": 65,
+      "tags": ["design", "ui/ux", "landing-page"],
+      "teamMember": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Sarah+Johnson&background=6366f1&color=fff",
+        "role": "UI/UX Designer",
+        "department": "Design"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Implement authentication system",
+      "description": "Set up JWT-based authentication with refresh tokens, including login, registration, and password reset functionality",
+      "assignedTo": "Mike Chen",
+      "assignedToId": 2,
+      "priority": "high",
+      "status": "completed",
+      "dueDate": "2026-01-10",
+      "createdDate": "2025-12-15",
+      "completedDate": "2026-01-08",
+      "progress": 100,
+      "tags": ["backend", "security", "authentication"],
+      "teamMember": {
+        "name": "Mike Chen",
+        "email": "mike.chen@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Mike+Chen&background=8b5cf6&color=fff",
+        "role": "Backend Developer",
+        "department": "Engineering"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Write API documentation",
+      "description": "Document all REST API endpoints using Swagger/OpenAPI specification with example requests and responses",
+      "assignedTo": "Emily Davis",
+      "assignedToId": 3,
+      "priority": "medium",
+      "status": "pending",
+      "dueDate": "2026-01-20",
+      "createdDate": "2025-12-25",
+      "completedDate": null,
+      "progress": 0,
+      "tags": ["documentation", "api", "swagger"],
+      "teamMember": {
+        "name": "Emily Davis",
+        "email": "emily.davis@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Emily+Davis&background=10b981&color=fff",
+        "role": "Technical Writer",
+        "department": "Documentation"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Fix payment gateway integration",
+      "description": "Debug and resolve Stripe webhook issues in production environment causing failed payment notifications",
+      "assignedTo": "Mike Chen",
+      "assignedToId": 2,
+      "priority": "high",
+      "status": "overdue",
+      "dueDate": "2025-12-30",
+      "createdDate": "2025-12-18",
+      "completedDate": null,
+      "progress": 45,
+      "tags": ["bug", "payment", "urgent", "stripe"],
+      "teamMember": {
+        "name": "Mike Chen",
+        "email": "mike.chen@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Mike+Chen&background=8b5cf6&color=fff",
+        "role": "Backend Developer",
+        "department": "Engineering"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Mobile app testing",
+      "description": "Conduct comprehensive testing on iOS and Android devices including regression testing and performance benchmarks",
+      "assignedTo": "James Wilson",
+      "assignedToId": 4,
+      "priority": "medium",
+      "status": "in-progress",
+      "dueDate": "2026-01-25",
+      "createdDate": "2026-01-01",
+      "completedDate": null,
+      "progress": 30,
+      "tags": ["testing", "mobile", "qa", "ios", "android"],
+      "teamMember": {
+        "name": "James Wilson",
+        "email": "james.wilson@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=James+Wilson&background=f59e0b&color=fff",
+        "role": "QA Engineer",
+        "department": "Quality Assurance"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Optimize database queries",
+      "description": "Improve performance of slow-running queries in user dashboard by adding proper indexes and query optimization",
+      "assignedTo": "Sarah Johnson",
+      "assignedToId": 1,
+      "priority": "low",
+      "status": "pending",
+      "dueDate": "2026-02-01",
+      "createdDate": "2025-12-28",
+      "completedDate": null,
+      "progress": 0,
+      "tags": ["performance", "database", "optimization"],
+      "teamMember": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Sarah+Johnson&background=6366f1&color=fff",
+        "role": "UI/UX Designer",
+        "department": "Design"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Set up CI/CD pipeline",
+      "description": "Configure GitHub Actions for automated testing, building, and deployment to staging and production environments",
+      "assignedTo": "Alex Turner",
+      "assignedToId": 5,
+      "priority": "medium",
+      "status": "completed",
+      "dueDate": "2026-01-05",
+      "createdDate": "2025-12-10",
+      "completedDate": "2026-01-04",
+      "progress": 100,
+      "tags": ["devops", "automation", "ci-cd"],
+      "teamMember": {
+        "name": "Alex Turner",
+        "email": "alex.turner@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Alex+Turner&background=ef4444&color=fff",
+        "role": "DevOps Engineer",
+        "department": "Engineering"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Create marketing email templates",
+      "description": "Design responsive email templates for campaign launches using modern HTML email best practices",
+      "assignedTo": "Emily Davis",
+      "assignedToId": 3,
+      "priority": "low",
+      "status": "pending",
+      "dueDate": "2026-01-30",
+      "createdDate": "2025-12-22",
+      "completedDate": null,
+      "progress": 0,
+      "tags": ["design", "email", "marketing"],
+      "teamMember": {
+        "name": "Emily Davis",
+        "email": "emily.davis@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Emily+Davis&background=10b981&color=fff",
+        "role": "Technical Writer",
+        "department": "Documentation"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Refactor legacy code module",
+      "description": "Modernize the user authentication module using latest JavaScript ES2024 features and best practices",
+      "assignedTo": "Alex Turner",
+      "assignedToId": 5,
+      "priority": "medium",
+      "status": "in-progress",
+      "dueDate": "2026-01-18",
+      "createdDate": "2025-12-27",
+      "completedDate": null,
+      "progress": 50,
+      "tags": ["refactoring", "code-quality", "javascript"],
+      "teamMember": {
+        "name": "Alex Turner",
+        "email": "alex.turner@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Alex+Turner&background=ef4444&color=fff",
+        "role": "DevOps Engineer",
+        "department": "Engineering"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Security audit and penetration testing",
+      "description": "Conduct comprehensive security audit including OWASP top 10 vulnerabilities assessment",
+      "assignedTo": "James Wilson",
+      "assignedToId": 4,
+      "priority": "high",
+      "status": "pending",
+      "dueDate": "2026-01-22",
+      "createdDate": "2026-01-02",
+      "completedDate": null,
+      "progress": 0,
+      "tags": ["security", "audit", "testing"],
+      "teamMember": {
+        "name": "James Wilson",
+        "email": "james.wilson@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=James+Wilson&background=f59e0b&color=fff",
+        "role": "QA Engineer",
+        "department": "Quality Assurance"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Implement real-time notifications",
+      "description": "Build WebSocket-based real-time notification system for user activities and system alerts",
+      "assignedTo": "Mike Chen",
+      "assignedToId": 2,
+      "priority": "medium",
+      "status": "in-progress",
+      "dueDate": "2026-01-28",
+      "createdDate": "2025-12-29",
+      "completedDate": null,
+      "progress": 40,
+      "tags": ["backend", "websocket", "real-time"],
+      "teamMember": {
+        "name": "Mike Chen",
+        "email": "mike.chen@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Mike+Chen&background=8b5cf6&color=fff",
+        "role": "Backend Developer",
+        "department": "Engineering"
+      }
+    },
+    {
+      "id": 12,
+      "title": "User onboarding flow redesign",
+      "description": "Redesign the onboarding experience with interactive tutorials and progress tracking",
+      "assignedTo": "Sarah Johnson",
+      "assignedToId": 1,
+      "priority": "medium",
+      "status": "completed",
+      "dueDate": "2026-01-12",
+      "createdDate": "2025-12-16",
+      "completedDate": "2026-01-11",
+      "progress": 100,
+      "tags": ["design", "ux", "onboarding"],
+      "teamMember": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Sarah+Johnson&background=6366f1&color=fff",
+        "role": "UI/UX Designer",
+        "department": "Design"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Upgrade third-party dependencies",
+      "description": "Update all npm packages to latest stable versions and resolve breaking changes",
+      "assignedTo": "Alex Turner",
+      "assignedToId": 5,
+      "priority": "low",
+      "status": "pending",
+      "dueDate": "2026-02-05",
+      "createdDate": "2025-12-30",
+      "completedDate": null,
+      "progress": 0,
+      "tags": ["maintenance", "dependencies", "npm"],
+      "teamMember": {
+        "name": "Alex Turner",
+        "email": "alex.turner@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Alex+Turner&background=ef4444&color=fff",
+        "role": "DevOps Engineer",
+        "department": "Engineering"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Build analytics dashboard",
+      "description": "Create comprehensive analytics dashboard with key metrics, charts, and export capabilities",
+      "assignedTo": "Sarah Johnson",
+      "assignedToId": 1,
+      "priority": "high",
+      "status": "in-progress",
+      "dueDate": "2026-01-20",
+      "createdDate": "2025-12-21",
+      "completedDate": null,
+      "progress": 70,
+      "tags": ["analytics", "dashboard", "data-visualization"],
+      "teamMember": {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Sarah+Johnson&background=6366f1&color=fff",
+        "role": "UI/UX Designer",
+        "department": "Design"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Implement role-based access control",
+      "description": "Build comprehensive RBAC system with role management, permissions, and access policies",
+      "assignedTo": "Mike Chen",
+      "assignedToId": 2,
+      "priority": "high",
+      "status": "pending",
+      "dueDate": "2026-01-27",
+      "createdDate": "2026-01-01",
+      "completedDate": null,
+      "progress": 0,
+      "tags": ["backend", "security", "rbac", "permissions"],
+      "teamMember": {
+        "name": "Mike Chen",
+        "email": "mike.chen@company.com",
+        "avatar": "https://ui-avatars.com/api/?name=Mike+Chen&background=8b5cf6&color=fff",
+        "role": "Backend Developer",
+        "department": "Engineering"
+      }
+    }
+  ],
+  "statistics": {
+    "totalTasks": 15,
+    "completedTasks": 3,
+    "inProgressTasks": 5,
+    "pendingTasks": 6,
+    "overdueTasks": 1,
+    "highPriorityTasks": 5,
+    "mediumPriorityTasks": 7,
+    "lowPriorityTasks": 3,
+    "averageCompletionTime": 6.5,
+    "onTimeCompletionRate": 85,
+    "weeklyCompletions": [2, 1, 0, 3, 1, 2, 1]
+  },
+  "teamMembers": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@company.com",
+      "avatar": "https://ui-avatars.com/api/?name=Sarah+Johnson&background=6366f1&color=fff",
+      "role": "UI/UX Designer",
+      "department": "Design",
+      "tasksAssigned": 4,
+      "tasksCompleted": 1,
+      "productivity": 92
+    },
+    {
+      "id": 2,
+      "name": "Mike Chen",
+      "email": "mike.chen@company.com",
+      "avatar": "https://ui-avatars.com/api/?name=Mike+Chen&background=8b5cf6&color=fff",
+      "role": "Backend Developer",
+      "department": "Engineering",
+      "tasksAssigned": 4,
+      "tasksCompleted": 1,
+      "productivity": 88
+    },
+    {
+      "id": 3,
+      "name": "Emily Davis",
+      "email": "emily.davis@company.com",
+      "avatar": "https://ui-avatars.com/api/?name=Emily+Davis&background=10b981&color=fff",
+      "role": "Technical Writer",
+      "department": "Documentation",
+      "tasksAssigned": 2,
+      "tasksCompleted": 0,
+      "productivity": 75
+    },
+    {
+      "id": 4,
+      "name": "James Wilson",
+      "email": "james.wilson@company.com",
+      "avatar": "https://ui-avatars.com/api/?name=James+Wilson&background=f59e0b&color=fff",
+      "role": "QA Engineer",
+      "department": "Quality Assurance",
+      "tasksAssigned": 2,
+      "tasksCompleted": 0,
+      "productivity": 81
+    },
+    {
+      "id": 5,
+      "name": "Alex Turner",
+      "email": "alex.turner@company.com",
+      "avatar": "https://ui-avatars.com/api/?name=Alex+Turner&background=ef4444&color=fff",
+      "role": "DevOps Engineer",
+      "department": "Engineering",
+      "tasksAssigned": 3,
+      "tasksCompleted": 1,
+      "productivity": 95
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2026-01-01T10:00:00Z",
+    "dataSource": "Task Management System",
+    "apiVersion": "v1"
+  }
+}
