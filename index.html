@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TaskFlow</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="position-fixed top-0 start-0 vh-100" style="width: 260px; z-index: 1000;">
+        <div class="sidebar-wrapper h-100 d-flex flex-column">
+            <div class="sidebar-header">
+                <h4 class="text-white mb-0">
+                    <i class="bi bi-check2-square text-primary"></i> TaskFlow
+                </h4>
+            </div>
+            
+            <ul class="sidebar-menu list-unstyled flex-grow-1 mt-3">
+                <li class="active">
+                    <a href="index.html">
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tasks.html">
+                        <i class="bi bi-list-task"></i>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="analytics.html">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <span>Task Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <i class="bi bi-people-fill"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="bi bi-gear-fill"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer p-3">
+                <small class="text-muted">© 2026 TaskFlow</small>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div id="main" style="margin-left: 260px;">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="ms-auto d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle"></i> Admin
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i> Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <!-- Welcome Section -->
+            <div class="mb-4">
+                <h2 class="mb-2">Welcome back, Admin! 👋</h2>
+                <p class="text-muted">Here's an overview of your task management system</p>
+            </div>
+            
+            <!-- Quick Actions -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <a href="tasks.html" class="text-decoration-none">
+                        <div class="stats-card">
+                            <div class="icon-wrapper primary">
+                                <i class="bi bi-list-task"></i>
+                            </div>
+                            <div class="stats-title">View All Tasks</div>
+                            <p class="text-muted small mb-0">Manage and track your tasks</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="analytics.html" class="text-decoration-none">
+                        <div class="stats-card">
+                            <div class="icon-wrapper success">
+                                <i class="bi bi-bar-chart-fill"></i>
+                            </div>
+                            <div class="stats-title">View Analytics</div>
+                            <p class="text-muted small mb-0">Insights and performance metrics</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-card" id="createTaskBtn" style="cursor: pointer;">
+                        <div class="icon-wrapper warning">
+                            <i class="bi bi-plus-circle"></i>
+                        </div>
+                        <div class="stats-title">Create New Task</div>
+                        <p class="text-muted small mb-0">Add a new task to the system</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Info Cards -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-12">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-info-circle-fill text-primary" style="font-size: 2rem;"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="card-title">Task 3: Front-End Customization Assessment</h5>
+                                    <p class="card-text mb-2">
+                                        This is a customized version of the <strong>Mazer Admin Dashboard</strong> template, 
+                                        adapted for task management functionality. The implementation demonstrates:
+                                    </p>
+                                    <ul class="mb-2">
+                                        <li>Custom Bootstrap 5 theme with Indigo (#6366f1) and Purple (#8b5cf6) color scheme</li>
+                                        <li>Dark sidebar navigation with Inter font family</li>
+                                        <li>Fully functional task management with real-time status updates</li>
+                                        <li>Advanced analytics with Chart.js visualizations</li>
+                                        <li>Responsive design for desktop, tablet, and mobile devices</li>
+                                        <li>Search, filter, sort, and pagination features</li>
+                                        <li>CSV export functionality</li>
+                                        <li>LocalStorage integration for data persistence</li>
+                                    </ul>
+                                    <div class="d-flex gap-2 mt-3">
+                                        <a href="tasks.html" class="btn btn-primary btn-sm">
+                                            <i class="bi bi-list-task"></i> Go to Tasks
+                                        </a>
+                                        <a href="analytics.html" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-bar-chart"></i> View Analytics
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0"><i class="bi bi-check2-square text-success me-2"></i>Implemented Features</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <div class="list-group-item px-0 border-0">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Custom theme with primary and secondary colors
+                                </div>
+                                <div class="list-group-item px-0 border-0">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Dark sidebar with reordered menu items
+                                </div>
+                                <div class="list-group-item px-0 border-0">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Task statistics and status cards
+                                </div>
+                                <div class="list-group-item px-0 border-0">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Interactive task table with sorting
+                                </div>
+                                <div class="list-group-item px-0 border-0">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Advanced filtering and search
+                                </div>
+                                <div class="list-group-item px-0 border-0">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Data-driven charts and visualizations
+                                </div>
+                                <div class="list-group-item px-0 border-0">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Responsive design for all devices
+                                </div>
+                                <div class="list-group-item px-0 border-0">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    CSV export functionality
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-white">
+                            <h5 class="mb-0"><i class="bi bi-code-square text-primary me-2"></i>Technologies Used</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2 mb-2">Bootstrap 5</span>
+                                <span class="badge bg-secondary me-2 mb-2">JavaScript ES6+</span>
+                                <span class="badge bg-success me-2 mb-2">Chart.js</span>
+                                <span class="badge bg-info me-2 mb-2">Bootstrap Icons</span>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted small mb-2">Key Libraries:</h6>
+                                <ul class="small">
+                                    <li><strong>Bootstrap 5.3.0</strong> - UI framework</li>
+                                    <li><strong>Chart.js 4.4.0</strong> - Data visualization</li>
+                                    <li><strong>Bootstrap Icons</strong> - Icon library</li>
+                                    <li><strong>Google Fonts (Inter)</strong> - Typography</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 class="text-muted small mb-2">JavaScript Features:</h6>
+                                <ul class="small">
+                                    <li>Async/Await for data loading</li>
+                                    <li>LocalStorage API for persistence</li>
+                                    <li>DOM manipulation and event handling</li>
+                                    <li>Array methods (filter, map, sort)</li>
+                                    <li>ES6+ syntax (arrow functions, destructuring)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="text-center py-4 text-muted">
+                <p class="mb-1">
+                    <strong>Task 3 - Front-End Skill Assessment</strong>
+                </p>
+                <p class="small mb-0">
+                    Customized Mazer Dashboard Template | Bootstrap 5 | Chart.js | Vanilla JavaScript
+                </p>
+            </div>
+            
+            <div class="mb-5"></div>
+        </div>
+    </div>
+
+    <!-- Create Task Modal -->
+    <div class="modal fade" id="createTaskModal" tabindex="-1" aria-labelledby="createTaskModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createTaskModalLabel">
+                        <i class="bi bi-plus-circle text-primary"></i> Create New Task
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="createTaskForm">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label for="taskTitle" class="form-label fw-semibold">Task Title <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="taskTitle" required placeholder="Enter task title">
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <label for="taskDescription" class="form-label fw-semibold">Description</label>
+                                <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label for="taskAssignee" class="form-label fw-semibold">Assign To <span class="text-danger">*</span></label>
+                                <select class="form-select" id="taskAssignee" required>
+                                    <option value="">Select team member</option>
+                                    <option value="John Smith">John Smith</option>
+                                    <option value="Sarah Johnson">Sarah Johnson</option>
+                                    <option value="Michael Brown">Michael Brown</option>
+                                    <option value="Emily Davis">Emily Davis</option>
+                                    <option value="David Wilson">David Wilson</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label for="taskPriority" class="form-label fw-semibold">Priority <span class="text-danger">*</span></label>
+                                <select class="form-select" id="taskPriority" required>
+                                    <option value="">Select priority</option>
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                    <option value="Urgent">Urgent</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label for="taskStatus" class="form-label fw-semibold">Status <span class="text-danger">*</span></label>
+                                <select class="form-select" id="taskStatus" required>
+                                    <option value="Pending">Pending</option>
+                                    <option value="In Progress">In Progress</option>
+                                    <option value="Completed">Completed</option>
+                                    <option value="On Hold">On Hold</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label for="taskDueDate" class="form-label fw-semibold">Due Date <span class="text-danger">*</span></label>
+                                <input type="date" class="form-control" id="taskDueDate" required>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <label for="taskTags" class="form-label fw-semibold">Tags</label>
+                                <input type="text" class="form-control" id="taskTags" placeholder="Enter tags separated by commas (e.g., frontend, bug, urgent)">
+                                <small class="text-muted">Separate multiple tags with commas</small>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="saveTaskBtn">
+                        <i class="bi bi-save"></i> Create Task
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Create Task Script -->
+    <script>
+        // Open create task modal
+        document.getElementById('createTaskBtn').addEventListener('click', function() {
+            // Reset form
+            document.getElementById('createTaskForm').reset();
+            
+            // Set default due date to tomorrow
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            document.getElementById('taskDueDate').value = tomorrow.toISOString().split('T')[0];
+            
+            // Open modal
+            const modal = new bootstrap.Modal(document.getElementById('createTaskModal'));
+            modal.show();
+        });
+        
+        // Save new task
+        document.getElementById('saveTaskBtn').addEventListener('click', function() {
+            const form = document.getElementById('createTaskForm');
+            
+            // Validate form
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            
+            // Get form values
+            const title = document.getElementById('taskTitle').value.trim();
+            const description = document.getElementById('taskDescription').value.trim();
+            const assignee = document.getElementById('taskAssignee').value;
+            const priority = document.getElementById('taskPriority').value;
+            const status = document.getElementById('taskStatus').value;
+            const dueDate = document.getElementById('taskDueDate').value;
+            const tagsInput = document.getElementById('taskTags').value.trim();
+            const tags = tagsInput ? tagsInput.split(',').map(tag => tag.trim()) : [];
+            
+            // Get existing tasks from localStorage
+            const savedTasks = JSON.parse(localStorage.getItem('userCreatedTasks') || '[]');
+            
+            // Generate new task ID
+            const maxId = savedTasks.length > 0 ? Math.max(...savedTasks.map(t => parseInt(t.id) || 0)) : 0;
+            const newId = (maxId + 1).toString();
+            
+            // Create new task object
+            const newTask = {
+                id: newId,
+                title: title,
+                description: description,
+                assignedTo: assignee,
+                priority: priority.toLowerCase(),
+                status: status.toLowerCase().replace(' ', '-'),
+                dueDate: dueDate,
+                createdDate: new Date().toISOString().split('T')[0],
+                progress: status === 'Completed' ? 100 : status === 'In Progress' ? 50 : 0,
+                tags: tags,
+                teamMember: {
+                    name: assignee,
+                    avatar: assignee.split(' ').map(n => n[0]).join(''),
+                    role: 'Team Member'
+                }
+            };
+            
+            // Add to localStorage
+            savedTasks.push(newTask);
+            localStorage.setItem('userCreatedTasks', JSON.stringify(savedTasks));
+            
+            // Close modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('createTaskModal'));
+            modal.hide();
+            
+            // Show success message
+            alert('Task created successfully! View it in the Tasks page.');
+            
+            // Optional: Redirect to tasks page
+            // window.location.href = 'tasks.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - TaskFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="active">
+        <div class="sidebar-wrapper">
+            <div class="sidebar-header">
+                <div class="d-flex align-items-center">
+                    <img src="assets/images/logo.svg" alt="Logo" style="height: 40px; width: 40px;">
+                    <h4 class="ms-3 mb-0 text-white">TaskFlow</h4>
+                </div>
+            </div>
+            
+            <ul class="sidebar-menu mt-4">
+                <li>
+                    <a href="index.html">
+                        <i class="bi bi-house-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tasks.html">
+                        <i class="bi bi-list-task"></i>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="analytics.html">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <span>Task Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <i class="bi bi-people-fill"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="active">
+                        <i class="bi bi-gear-fill"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer p-3">
+                <small class="text-muted">© 2026 TaskFlow</small>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div id="main" style="margin-left: 260px;">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="ms-auto d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle"></i> Admin
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear"></i> Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="mb-3">Settings</h2>
+                    <p class="text-muted">Manage your application preferences and configurations</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- General Settings -->
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-white border-0 py-3">
+                            <h5 class="mb-0"><i class="bi bi-gear-fill text-primary"></i> General Settings</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold">Application Name</label>
+                                    <input type="text" class="form-control" value="TaskFlow">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold">Default Language</label>
+                                    <select class="form-select">
+                                        <option selected>English</option>
+                                        <option>Spanish</option>
+                                        <option>French</option>
+                                        <option>German</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold">Time Zone</label>
+                                    <select class="form-select">
+                                        <option selected>UTC (GMT+0)</option>
+                                        <option>EST (GMT-5)</option>
+                                        <option>PST (GMT-8)</option>
+                                        <option>IST (GMT+5:30)</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold">Date Format</label>
+                                    <select class="form-select">
+                                        <option selected>MM/DD/YYYY</option>
+                                        <option>DD/MM/YYYY</option>
+                                        <option>YYYY-MM-DD</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Notification Settings -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-white border-0 py-3">
+                            <h5 class="mb-0"><i class="bi bi-bell-fill text-info"></i> Notifications</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="emailNotif" checked>
+                                <label class="form-check-label" for="emailNotif">
+                                    <strong>Email Notifications</strong>
+                                    <br><small class="text-muted">Receive email updates for task assignments</small>
+                                </label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="pushNotif" checked>
+                                <label class="form-check-label" for="pushNotif">
+                                    <strong>Push Notifications</strong>
+                                    <br><small class="text-muted">Get browser notifications for important updates</small>
+                                </label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="taskReminders">
+                                <label class="form-check-label" for="taskReminders">
+                                    <strong>Task Reminders</strong>
+                                    <br><small class="text-muted">Remind me about upcoming task deadlines</small>
+                                </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="weeklyReport" checked>
+                                <label class="form-check-label" for="weeklyReport">
+                                    <strong>Weekly Reports</strong>
+                                    <br><small class="text-muted">Receive weekly progress reports</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Privacy & Security -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-white border-0 py-3">
+                            <h5 class="mb-0"><i class="bi bi-shield-lock-fill text-success"></i> Privacy & Security</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Change Password</label>
+                                <button class="btn btn-outline-primary w-100">Update Password</button>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Two-Factor Authentication</label>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-muted">Add an extra layer of security</span>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="twoFactor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Session Timeout</label>
+                                <select class="form-select">
+                                    <option>15 minutes</option>
+                                    <option selected>30 minutes</option>
+                                    <option>1 hour</option>
+                                    <option>Never</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="col-lg-4">
+                    <!-- Profile Card -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body text-center">
+                            <div class="avatar bg-primary text-white rounded-circle mx-auto mb-3" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 32px;">
+                                A
+                            </div>
+                            <h5 class="mb-1">Admin User</h5>
+                            <p class="text-muted mb-3">admin@example.com</p>
+                            <button class="btn btn-outline-primary btn-sm">Edit Profile</button>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-white border-0 py-3">
+                            <h5 class="mb-0">Quick Actions</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-outline-primary">
+                                    <i class="bi bi-download"></i> Export Data
+                                </button>
+                                <button class="btn btn-outline-info">
+                                    <i class="bi bi-upload"></i> Import Data
+                                </button>
+                                <button class="btn btn-outline-warning">
+                                    <i class="bi bi-arrow-clockwise"></i> Reset Settings
+                                </button>
+                                <button class="btn btn-outline-danger">
+                                    <i class="bi bi-trash"></i> Clear Cache
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Info -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-0 py-3">
+                            <h5 class="mb-0">System Information</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <small class="text-muted">Version</small>
+                                <div class="fw-semibold">1.0.0</div>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-muted">Last Updated</small>
+                                <div class="fw-semibold">Jan 1, 2026</div>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-muted">Storage Used</small>
+                                <div class="fw-semibold">2.4 MB / 5 GB</div>
+                            </div>
+                            <div class="mb-2">
+                                <small class="text-muted">Active Users</small>
+                                <div class="fw-semibold">5 users</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Save Button -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-end gap-2">
+                        <button class="btn btn-outline-secondary">Cancel</button>
+                        <button class="btn btn-primary">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

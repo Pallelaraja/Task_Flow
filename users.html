@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users - TaskFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="active">
+        <div class="sidebar-wrapper">
+            <div class="sidebar-header">
+                <div class="d-flex align-items-center">
+                    <img src="assets/images/logo.svg" alt="Logo" style="height: 40px; width: 40px;">
+                    <h4 class="ms-3 mb-0 text-white">TaskFlow</h4>
+                </div>
+            </div>
+            
+            <ul class="sidebar-menu mt-4">
+                <li>
+                    <a href="index.html">
+                        <i class="bi bi-house-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tasks.html">
+                        <i class="bi bi-list-task"></i>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="analytics.html">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <span>Task Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html" class="active">
+                        <i class="bi bi-people-fill"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="bi bi-gear-fill"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer p-3">
+                <small class="text-muted">© 2026 TaskFlow</small>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div id="main" style="margin-left: 260px;">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="ms-auto d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle"></i> Admin
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear"></i> Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="mb-3">Team Members</h2>
+                    <p class="text-muted">Manage your team members and their roles</p>
+                </div>
+            </div>
+
+            <!-- User Stats Cards -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-primary bg-opacity-10 text-primary p-3 rounded">
+                                    <i class="bi bi-people-fill fs-4"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="text-muted mb-1">Total Users</h6>
+                                    <h3 class="mb-0">5</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-success bg-opacity-10 text-success p-3 rounded">
+                                    <i class="bi bi-person-check-fill fs-4"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="text-muted mb-1">Active Users</h6>
+                                    <h3 class="mb-0">5</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-info bg-opacity-10 text-info p-3 rounded">
+                                    <i class="bi bi-briefcase-fill fs-4"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="text-muted mb-1">Roles</h6>
+                                    <h3 class="mb-0">4</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-warning bg-opacity-10 text-warning p-3 rounded">
+                                    <i class="bi bi-clock-fill fs-4"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="text-muted mb-1">Avg. Tasks</h6>
+                                    <h3 class="mb-0">3</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Users Table -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-0 py-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">All Team Members</h5>
+                                <button class="btn btn-primary">
+                                    <i class="bi bi-person-plus"></i> Add New User
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0">
+                                    <thead class="bg-light">
+                                        <tr>
+                                            <th class="px-4">Name</th>
+                                            <th>Email</th>
+                                            <th>Role</th>
+                                            <th>Department</th>
+                                            <th>Tasks</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="px-4">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar bg-primary text-white rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                                                        JS
+                                                    </div>
+                                                    <span class="fw-semibold">John Smith</span>
+                                                </div>
+                                            </td>
+                                            <td>john.smith@example.com</td>
+                                            <td><span class="badge bg-primary">Project Manager</span></td>
+                                            <td>Development</td>
+                                            <td>4 tasks</td>
+                                            <td><span class="badge bg-success">Active</span></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary me-1">
+                                                    <i class="bi bi-pencil"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar bg-success text-white rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                                                        SJ
+                                                    </div>
+                                                    <span class="fw-semibold">Sarah Johnson</span>
+                                                </div>
+                                            </td>
+                                            <td>sarah.johnson@example.com</td>
+                                            <td><span class="badge bg-success">Developer</span></td>
+                                            <td>Development</td>
+                                            <td>3 tasks</td>
+                                            <td><span class="badge bg-success">Active</span></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary me-1">
+                                                    <i class="bi bi-pencil"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar bg-info text-white rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                                                        MB
+                                                    </div>
+                                                    <span class="fw-semibold">Michael Brown</span>
+                                                </div>
+                                            </td>
+                                            <td>michael.brown@example.com</td>
+                                            <td><span class="badge bg-info">Designer</span></td>
+                                            <td>Design</td>
+                                            <td>3 tasks</td>
+                                            <td><span class="badge bg-success">Active</span></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary me-1">
+                                                    <i class="bi bi-pencil"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar bg-warning text-white rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                                                        ED
+                                                    </div>
+                                                    <span class="fw-semibold">Emily Davis</span>
+                                                </div>
+                                            </td>
+                                            <td>emily.davis@example.com</td>
+                                            <td><span class="badge bg-warning">QA Tester</span></td>
+                                            <td>Quality Assurance</td>
+                                            <td>2 tasks</td>
+                                            <td><span class="badge bg-success">Active</span></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary me-1">
+                                                    <i class="bi bi-pencil"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="avatar bg-danger text-white rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                                                        DW
+                                                    </div>
+                                                    <span class="fw-semibold">David Wilson</span>
+                                                </div>
+                                            </td>
+                                            <td>david.wilson@example.com</td>
+                                            <td><span class="badge bg-danger">Developer</span></td>
+                                            <td>Development</td>
+                                            <td>3 tasks</td>
+                                            <td><span class="badge bg-success">Active</span></td>
+                                            <td>
+                                                <button class="btn btn-sm btn-outline-primary me-1">
+                                                    <i class="bi bi-pencil"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
